@@ -176,7 +176,10 @@ public class HuaRongDao
             }
             System.out.println(depth);
             now.output();
+            glscanner.nextLine();
         }
+
+        public static Scanner glscanner = new Scanner(System.in);
 
         public static int[][] stringToStates(String desc){
             if(desc.length() != ROW*COL){return null;}
@@ -205,7 +208,7 @@ public class HuaRongDao
             personShape.put(name2Value.get("黄"), V_SHAPE);
             personShape.put(name2Value.get("赵"), V_SHAPE);
             System.out.println("请连续输入棋盘配置，人物用单字表示，空格用空表示，如张曹槽马空");
-            String model = scanner.nextLine().trim().replace("空","〇");
+            String model = scanner.nextLine().trim().replace("空","〇").replace(" ","");
             System.out.println("卒默认为单点，曹操默认2x2");
             String hPersons[] = model.split("");
             for(int i = 1; i < hPersons.length; i++){
