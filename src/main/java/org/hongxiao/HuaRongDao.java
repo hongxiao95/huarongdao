@@ -3,8 +3,8 @@ package org.hongxiao;
 import java.util.*;
 
 /**
- * Hello world!
- *
+ * 本代码的主要贡献者是林榆旺 先生
+ * 本人主要负责部分模型的优化和建议
  */
 public class HuaRongDao
 {
