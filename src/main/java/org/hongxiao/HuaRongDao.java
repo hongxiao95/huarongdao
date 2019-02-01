@@ -3,8 +3,7 @@ package org.hongxiao;
 import java.util.*;
 
 /**
- * 本代码的主要贡献者是林榆旺 先生
- * 本人主要负责部分模型的优化和建议
+ * 本代码的主要贡献者是棋斌和鸿霄 先生
  */
 public class HuaRongDao
 {
@@ -56,7 +55,7 @@ public class HuaRongDao
             int result = 0;
             for(int i = 0; i < ROW; i++){
                 for(int j = 0; j < COL; j++){
-                    result = result * 9 + data[i][j];
+                    result = result * 31 + data[i][j];
                 }
             }
             return result;
