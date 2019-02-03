@@ -168,11 +168,12 @@ public class HuaRongDao
             outSteps(father, depth + 1);
             Qipan before = new Qipan(father);
             Qipan now = new Qipan(state);
+/*
             for(int i =0; i < ROW; i++){
                 for(int j = 0; j < COL; j++){
                     now.data[i][j] -= before.data[i][j];
                 }
-            }
+            }*/
             System.out.println(depth);
             now.output();
             glscanner.nextLine();
